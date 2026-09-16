@@ -24,3 +24,6 @@ BOM is under the production folder or look below for a less detailed BOM:
 | `Mini motor disk/buzzer` | 1x (any kind with SMD 2 pin mount) |
 | `Capacitors` | 2x (10uF) |
 | `Push Button` | 1x (CR2032 batt holder) |
+
+<br>
+Made by JVJK with :3 for Hack Club! Slack: Java Junkie
