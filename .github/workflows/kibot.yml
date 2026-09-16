@@ -1,0 +1,36 @@
+name: "KiBot PCB Automation"
+
+# Trigger the workflow on pushes or pull requests to the main branch
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Clone the repository files into the runner
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Run KiBot automation suite
+      - name: KiBot GitHub action
+        uses: INTI-CMNB/KiBot@v1.9.1
+        with:
+          # Path to your main schematic file (change name to match yours)
+          schema: 'project.kicad_sch'
+          # Path to your main PCB layout file (change name to match yours)
+          board: 'project.kicad_pcb'
+          # Your KiBot configuration profile (e.g., quick-start profile)
+          config: 'config.kibot.yaml'
+          # Target directory where generated PDFs, Gerbers, and BOMs go
+          dir: 'output'
+
+      # Step 3: Save generated outputs so you can download them from GitHub
+      - name: Upload Generated Fabrication Files
+        uses: actions/artifacts@v4
+        with:
+          name: fabrication-outputs
+          path: output/
