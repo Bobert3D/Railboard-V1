@@ -5,7 +5,7 @@
 ### A Hack Club that has a push button buzzer and 2 LED's to simulate a railroad crossing!
 
 ## Schematic
-![Schematic Screenshot](Images/Schematic_Updated.png)
+![Schematic Screenshot](Images/Schematic_updated.png)
 The schematic is a somewhat simple loop that links power to the first resistor and then it continues to power the following. The push button is connected to the start of the power link so it doesn't stop power and goes directly to the buzzer. The LED's are linked to resistors and transistors and then connected to GND.<br>
 ## PCB
 ![PCB Top](Images/PCB_Top.png)
