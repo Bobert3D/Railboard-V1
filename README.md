@@ -15,6 +15,8 @@ The schematic is a somewhat simple loop that links power to the first resistor a
 The PCB is a detailed shape with art I added and uses the JLCPCB full-color silkscreen tech! The layout was somewhat hard and the DRC was taken into consideration!
 ![Circuit Video](Circuit.gif)
 
+
+
 BOM is under the production folder or look below for a less detailed BOM:
 
 
