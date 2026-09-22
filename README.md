@@ -13,7 +13,7 @@ The schematic is a somewhat simple loop that links power to the first resistor a
 ![PCB 3D Top](Images/PCB_3D_Top.png)
 ![PCB 3D Bottom](Images/PCB_3D_Bottom.png)
 The PCB is a detailed shape with art I added and uses the JLCPCB full-color silkscreen tech! The layout was somewhat hard and the DRC was taken into consideration!
-![Circuit Video](https://github.com/Bobert3D/Railboard-V1/blob/37950cec3a9a0e1f877137b927010defe9f8b3a0/Images/Screen%20recording%202026-09-22%201.17.16%20PM.webm)
+![Circuit Video](Circuit.gif)
 
 BOM is under the production folder or look below for a less detailed BOM:
 
